@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./v.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan&family=Cherry+Bomb+One&family=Chewy&family=Foldit&family=Henny+Penny&family=Jua&family=Kalam&family=Kreon&family=Londrina+Outline&family=Poppins&family=Rowdies:wght@300;400&family=Suez+One&family=Wix+Madefor+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting@1.0.5/dist/splitting-cells.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <title>Vishnu M</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+
+    <style>
+      @media (min-width: 1076px) {
+        html,
+        body {
+          height: 100%;
+          overflow: hidden;
+          background-color: black;
+          font-family: "Avenir Next", Helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 100%;
+          margin: 0;
+          padding: 0;
+          cursor: default;
+          scroll-behavior: auto;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Bevan&family=Cherry+Bomb+One&family=Chewy&family=Foldit&family=Henny+Penny&family=Jua&family=Kreon&family=Londrina+Outline&family=Rowdies:wght@300;400&family=Suez+One&family=Wix+Madefor+Text&display=swap");
+
+        ::-webkit-scrollbar {
+          width: 0em;
+          height: 0em;
+        }
+
+        .Loop {
+          position: relative;
+          height: 100%;
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        section {
+          position: relative;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+        }
+
+        ::scrollbar {
+          display: none;
+        }
+
+        h1 {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          font-size: 80px;
+          letter-spacing: 5px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+
+        .two h1,
+        .four h1 {
+          margin-top: -20px;
+          color: #fff;
+          font-family: bevan;
+          animation: abouthead 1s infinite;
+        }
+        #darr {
+          margin-top: 25vh;
+        }
+
+        @keyframes abouthead {
+          0%,
+          100% {
+            color: #fff;
+          }
+          50% {
+            color: black;
+          }
+        }
+
+        /* ************************************one******************************************* */
+
+        .bg-move {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-image: url("d.png"); /* Replace with the actual path to your image */
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: left;
+          background-attachment: fixed;
+        }
+
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: center;
+          align-content: center;
+          height: 100vh;
+        }
+
+        .grid-item {
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          padding: 10px;
+          font-size: 30px;
+          color: #fff;
+        }
+
+        .container {
+          color: #b6b6b6;
+          height: 100vh;
+          display: flex;
+          justify-content: left;
+          align-items: flex-start;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .container p {
+          align-items: center;
+          font-size: 2rem;
+          padding: 0.5rem;
+          /* font-weight: normal; */
+          letter-spacing: 0.1rem;
+          text-align: left;
+          overflow: hidden;
+          padding-top: 30vh;
+          padding-left: 10vw;
+          font-family: poppins;
+          /* white-space: nowrap; */
+        }
+
+        #vishnu {
+          font-weight: 1000;
+          color: #fff;
+        }
+
+        #line1 {
+          display: block;
+        }
+
+        .container p span.typed-text,
+        .container p span.typed-text2 {
+          font-weight: bold;
+          color: #8add32;
+        }
+
+        .container p span.cursor,
+        .container p span.cursor2 {
+          display: inline-block;
+          background-color: #ccc;
+          margin-left: 0.1rem;
+          width: 1px;
+          animation: blink 1s infinite;
+        }
+
+        .container p span.cursor.typing,
+        .container p span.cursor2.typing {
+          animation: none;
+        }
+
+        @keyframes blink {
+          0% {
+            background-color: #ccc;
+          }
+          49% {
+            background-color: #ccc;
+          }
+          50% {
+            background-color: transparent;
+          }
+          99% {
+            background-color: transparent;
+          }
+          100% {
+            background-color: #ccc;
+          }
+        }
+
+        .navbardiv {
+          margin-top: 30px;
+          padding-top: 50px;
+          display: flex;
+          justify-content: end;
+        }
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 7px;
+          display: flex;
+          justify-content: space-between;
+          list-style-type: none;
+          /* background-color:#ffeea1; */
+        }
+
+        ul li {
+          margin: 0 10px;
+          display: inline;
+        }
+
+        nav a {
+          color: #ccc;
+          font-family: "Jua", cursive;
+          font-weight: 1000;
+          text-decoration: none;
+          font-size: 14px;
+          margin-right: 3px;
+          margin-left: 5px;
+          /* position: relative; */
+          display: inline-block; /* Use inline-block to apply translateY */
+          vertical-align: middle;
+          transition: transform 250ms;
+        }
+
+        nav a:hover {
+          transform: translateY(5px);
+        }
+
+        li a::before {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background-color: #ccc;
+          transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        li a:hover::before {
+          width: 100%;
+          left: 0%;
+        }
+
+        li a::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          right: 50%;
+          width: 0;
+          height: 2px;
+          background-color: #ccc;
+          transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
+        }
+
+        .wheel-container {
+          width: 1150px;
+          height: 1150px;
+          border-radius: 100%;
+          overflow: hidden;
+          position: relative;
+          box-shadow: 0 0 50px 0px #828282;
+        }
+
+        .wheel {
+          width: 100%;
+          height: 100%;
+          background: url("./98.png") center/cover no-repeat;
+          position: absolute;
+          animation: circularMove 800s linear infinite;
+          transform-origin: center center;
+        }
+
+        @keyframes circularMove {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        .grid-itemone {
+          position: absolute;
+          top: 0%;
+          left: 5%;
+          transform: translate(-50%, -50%);
+          font-size: 30px;
+          color: #fff;
+        }
+
+        /*******************************************two********************************************/
+
+        .two {
+          background: linear-gradient(to right, #fdfc47, #24fe41);
+        }
+
+        .bg-move1 {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-image: url("li8.png"); /* Replace with the actual path to your image */
+          background-size: 500px;
+          background-repeat: no-repeat;
+          background-position: -15% -150%;
+          filter: drop-shadow(0px 4px 10px rgba(255, 255, 0, 0.7));
+        }
+
+        #aboutparadiv {
+          color: #ccc;
+          font-size: 18px;
+          font-family: kalam;
+          width: 50%;
+          height: 100vh;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          background: transparent;
+          align-items: center;
+          transform: translate(60%, 0%);
+        }
+
+        #aboutparad {
+          background-color: transparent;
+        }
+
+        .flashlight-container {
+          position: relative;
+          overflow: hidden;
+          background: transparent;
+        }
+
+        .flashlight-container:before {
+          content: "";
+          /* display: block; */
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          pointer-events: none;
+          background: radial-gradient(
+            circle 800px at var(--cursorX) var(--cursorY),
+            rgba(0, 0, 0, 0.1) 10%,
+            rgba(0, 0, 0, 0.2) 20%,
+            rgba(0, 0, 0, 0.3) 30%,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.6) 60%,
+            rgba(0, 0, 0, 0.7) 70%,
+            rgba(0, 0, 0, 0.8) 80%,
+            rgba(0, 0, 0, 0.9) 90%,
+            rgba(0, 0, 0, 1) 100%
+          );
+          z-index: 1;
+        }
+        .flashlight-container:after {
+          content: "";
+          /* display: block; */
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          pointer-events: none;
+          background: radial-gradient(
+            circle 2000px at var(--cursorX) var(--cursorY),
+            rgba(0, 0, 0, 0.1) 10%,
+            rgba(0, 0, 0, 0.2) 20%,
+            rgba(0, 0, 0, 0.3) 30%,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.6) 60%,
+            rgba(0, 0, 0, 0.7) 70%,
+            rgba(0, 0, 0, 0.8) 80%,
+            rgba(0, 0, 0, 0.9) 90%,
+            rgba(0, 0, 0, 1) 100%
+          );
+          z-index: 1;
+        }
+        /* Adjust the size of the flashlight effect as needed */
+        :root:before {
+          background: radial-gradient(
+            circle 2500px at var(--cursorX) var(--cursorY),
+            rgba(0, 0, 0, 0.1) 10%,
+            rgba(0, 0, 0, 0.2) 20%,
+            rgba(0, 0, 0, 0.3) 30%,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.6) 60%,
+            rgba(0, 0, 0, 0.7) 70%,
+            rgba(0, 0, 0, 0.8) 80%,
+            rgba(0, 0, 0, 0.9) 90%,
+            rgba(0, 0, 0, 1) 100%
+          );
+        }
+        :root:after {
+          background: radial-gradient(
+            circle 2500px at var(--cursorX) var(--cursorY),
+            rgba(0, 0, 0, 0.1) 10%,
+            rgba(0, 0, 0, 0.2) 20%,
+            rgba(0, 0, 0, 0.3) 30%,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.6) 60%,
+            rgba(0, 0, 0, 0.7) 70%,
+            rgba(0, 0, 0, 0.8) 80%,
+            rgba(0, 0, 0, 0.9) 90%,
+            rgba(0, 0, 0, 1) 100%
+          );
+        }
+
+        /* *********************************three***************************************** */
+
+        .three {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(
+            to right,
+            #03001e,
+            #7303c0,
+            #ec38bc,
+            #fdeff9
+          );
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+        input[type="radio"] {
+          display: none;
+        }
+
+        #project1 {
+          color: black;
+          /* z-index: 0; */
+          font-family: foldit;
+          animation: abouthead2 1s infinite;
+          font-weight: 1000;
+          margin: 0;
+          position: absolute;
+          width: 100%;
+          font-size: 65px;
+          text-transform: uppercase;
+          writing-mode: vertical-lr;
+          text-orientation: upright;
+          letter-spacing: 0px;
+          overflow: auto;
+        }
+
+        @keyframes abouthead2 {
+          0%,
+          100% {
+            color: #fff;
+          }
+          50% {
+            color: black;
+          }
+        }
+
+        .card {
+          position: absolute;
+          width: 100%;
+          height: 85%;
+          left: 0;
+          right: 0;
+          margin: auto;
+          transition: transform 0.5s ease;
+          cursor: pointer;
+        }
+
+        .containercar {
+          width: 100%;
+          max-width: 55%;
+          max-height: 100%;
+          height: 100%;
+
+          transform-style: preserve-3d;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+        }
+
+        .cards {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          margin-top: 5vh;
+          margin-bottom: -9vh;
+        }
+
+        .imagee {
+          width: 100%;
+          height: 100%;
+
+          /* border-radius: 10px; */
+          /* object-fit:fill; */
+        }
+
+        #item-10:checked ~ .cards #song-1,
+        #item-1:checked ~ .cards #song-2,
+        #item-2:checked ~ .cards #song-3,
+        #item-3:checked ~ .cards #song-4,
+        #item-4:checked ~ .cards #song-5,
+        #item-5:checked ~ .cards #song-6,
+        #item-6:checked ~ .cards #song-7,
+        #item-7:checked ~ .cards #song-8,
+        #item-8:checked ~ .cards #song-9,
+        #item-9:checked ~ .cards #song-10 {
+          /* transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0; */
+          transform: translatex(30%) scale(0.8);
+          opacity: 0.4;
+          z-index: 0;
+        }
+
+        #item-1:checked ~ .cards #song-10,
+        #item-2:checked ~ .cards #song-1,
+        #item-3:checked ~ .cards #song-2,
+        #item-4:checked ~ .cards #song-3,
+        #item-5:checked ~ .cards #song-4,
+        #item-6:checked ~ .cards #song-5,
+        #item-7:checked ~ .cards #song-6,
+        #item-8:checked ~ .cards #song-7,
+        #item-9:checked ~ .cards #song-8,
+        #item-10:checked ~ .cards #song-9 {
+          transform: translatex(-20%) scale(0.8);
+          opacity: 0.4;
+          z-index: 0;
+        }
+
+        #item-1:checked ~ .cards #song-1,
+        #item-2:checked ~ .cards #song-2,
+        #item-3:checked ~ .cards #song-3,
+        #item-4:checked ~ .cards #song-4,
+        #item-5:checked ~ .cards #song-5,
+        #item-6:checked ~ .cards #song-6,
+        #item-7:checked ~ .cards #song-7,
+        #item-8:checked ~ .cards #song-8,
+        #item-9:checked ~ .cards #song-9,
+        #item-10:checked ~ .cards #song-10 {
+          transform: translatex(0) scale(1);
+          opacity: 1;
+          z-index: 1;
+
+          .imagee {
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.47);
+          }
+        }
+
+        .player {
+          background-color: transparent;
+          border-radius: 8px;
+          min-width: 500px;
+          max-height: 100px;
+          padding: 16px 20px;
+          margin-bottom: 5vh;
+        }
+
+        .upper-part {
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 100px;
+          overflow: hidden;
+        }
+
+        .song-info {
+          width: 100%;
+          height: 100px;
+          display: block;
+        }
+
+        .song-info .title {
+          color: #e7e7e7;
+          font-size: 14px;
+          line-height: 20px;
+          font-family: poppins;
+          /* text-shadow: 0px 0px 5px #808080; */
+        }
+
+        #vishnu2 {
+          font-weight: 700;
+          padding-bottom: 25px;
+        }
+
+        .info-area {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: transform 0.4s linear;
+        }
+
+        #item-1:checked ~ .player #test {
+          transform: translateY(0);
+        }
+
+        #item-2:checked ~ .player #test {
+          transform: translateY(-100px);
+        }
+        #item-3:checked ~ .player #test {
+          transform: translateY(-200px);
+        }
+
+        #item-4:checked ~ .player #test {
+          transform: translateY(-300px);
+        }
+
+        #item-5:checked ~ .player #test {
+          transform: translateY(-400px);
+        }
+
+        #item-6:checked ~ .player #test {
+          transform: translateY(-500px);
+        }
+
+        #item-7:checked ~ .player #test {
+          transform: translateY(-600px);
+        }
+
+        #item-8:checked ~ .player #test {
+          transform: translateY(-700px);
+        }
+
+        #item-9:checked ~ .player #test {
+          transform: translateY(-800px);
+        }
+
+        #item-10:checked ~ .player #test {
+          transform: translateY(-900px);
+        }
+
+        /* *********************************four***************************************** */
+
+        .four {
+          background: linear-gradient(to left, #ff9966, #ff5e62);
+        }
+
+        #resdiv {
+          height: 100%;
+          overflow: hidden;
+          display: flex;
+          justify-content: right;
+          align-items: right;
+          align-content: right;
+        }
+
+        #resume {
+          color: black;
+          z-index: 0;
+          font-family: foldit;
+          animation: abouthead2 1s infinite;
+          font-weight: 1000;
+          margin: 0;
+          position: relative;
+          width: 10%;
+          font-size: 85px;
+          text-transform: uppercase;
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          letter-spacing: 0px;
+          overflow: auto;
+        }
+        #rrr {
+          /* color: #4d4d4d; */
+          box-sizing: content-box;
+          color: #c0dde5;
+          text-shadow: 0 0 10px #38c4ea;
+        }
+        .btn-neon {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: poppins;
+          text-align: center;
+          font-size: 24px;
+          line-height: 50px;
+          color: #000000;
+          width: 180px;
+          height: 50px;
+          transition: 2s;
+          /* transition-property: background; */
+          transition-delay: 0.5s;
+          position: absolute;
+          /* display: inline-block; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          transform: translate(60vw, 42vh);
+          border-radius: 30px;
+        }
+        .btn-neon2 {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: poppins;
+          text-align: center;
+          font-size: 24px;
+          line-height: 50px;
+          color: #000000;
+          width: 180px;
+          transition: 2s;
+          transition-delay: 0.5s;
+          position: absolute;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          transform: translate(60vw, 52vh);
+          border-radius: 30px;
+        }
+
+        .btn-neon:hover,
+        .btn-neon2:hover {
+          color: #c0dde5;
+          text-shadow: 0 0 10px #38c4ea;
+          box-shadow: 0 0 10px #38c4ea, 0 0 40px #38c4ea, 0 0 80px #38c4ea,
+            0 0 30px #38c4ea inset;
+        }
+
+        .btn-neon:hover polyline,
+        .btn-neon2:hover polyline {
+          stroke-dashoffset: -460;
+        }
+
+        .btn-neon svg,
+        .btn-neon2 svg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .btn-neon svg polyline,
+        .btn-neon2 svg polyline {
+          fill: transparent;
+          stroke: #38c4ea;
+          stroke-width: 2px;
+          stroke-dasharray: 40 460;
+          stroke-dashoffset: 40;
+          transition: 0.8s ease-in-out;
+        }
+
+        /***************************five************************************/
+
+        .tiler {
+          display: inline-block;
+          cursor: pointer;
+          visibility: hidden;
+          width: 23%;
+          height: 29%;
+          margin-left: 7px;
+          margin-right: 7px;
+        }
+
+        .tiler img {
+          visibility: visible;
+        }
+
+        .tiler .cell-grid {
+          background-position: center center;
+          margin: auto;
+          position: fixed;
+          top: 1em;
+          bottom: 1em;
+          left: 1em;
+          right: 1em;
+          z-index: 10;
+
+          max-width: 1000px;
+          max-height: 600px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          perspective: 30px;
+        }
+
+        .tiler .cell {
+          pointer-events: none;
+          opacity: 0;
+
+          transform: translateZ(-15px);
+          transform-style: preserve-3d;
+
+          transition-property: transform, opacity;
+          transition-duration: 0.5s, 0.4s;
+          transition-timing-function: cubic-bezier(0.65, 0.01, 0.15, 1.33);
+
+          --center-x: calc((var(--col-total) - 1) / 2);
+          --center-y: calc((var(--row-total) - 1) / 2);
+
+          --offset-x: calc(var(--col-index) - var(--center-x));
+          --offset-y: calc(var(--row-index) - var(--center-y));
+
+          --distance-x: calc(
+            (var(--offset-x) * var(--offset-x)) / var(--center-x)
+          );
+
+          --distance-y: calc(
+            (var(--offset-y) * var(--offset-y)) / var(--center-y)
+          );
+
+          transition-delay: calc(
+            0.1s * var(--distance-y) + 0.1s * var(--distance-x)
+          );
+        }
+
+        .tiler-overlay {
+          z-index: 2;
+        }
+        .tiler:hover .cell {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        .five {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 100%;
+          padding-top: 2em;
+          height: 100vh;
+          justify-content: center;
+        }
+
+        /*********************************************************eight**************************************************/
+
+        .eight {
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: right;
+          align-content: center;
+          align-items: center;
+          color: #ccc;
+          font-family: poppins;
+        }
+        .contdivinfo {
+          width: 40%;
+          height: 60%;
+          display: flex;
+          justify-content: center;
+          text-align: left;
+          color: #ccc;
+        }
+        .clinka {
+          text-decoration: none;
+          color: #8f8f8f;
+          transition: 0.3s;
+        }
+        .clink {
+          padding-bottom: 15px;
+        }
+        .divinfo h2 {
+          padding-bottom: 15px;
+        }
+        .clinka:hover {
+          color: #dfdfdf;
+          text-shadow: 0 0 10px #38c4ea, 0 0 40px #38c4ea, 0 0 80px #38c4ea;
+        }
+        .clinkimg {
+          margin-bottom: -3px;
+        }
+      }
+      @media (max-width: 1075px) {
+        /* Optionally, you can hide content here or display a message */
+        body {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="Loop js-loop">
+      <section class="one">
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="grid-itemone">
+              <div class="wheel-container">
+                <div class="wheel"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item" id="rightone">
+            <div class="navbardiv">
+              <nav>
+                <ul>
+                  <li>
+                    <a style="margin-right: 5px" href="#two">ABOUT</a>
+                    <a style="margin-left: 5px; margin-right: 5px" href="#three"
+                      >PROJECTS</a
+                    >
+                    <a style="margin-left: 5px; margin-right: 5px" href="#four"
+                      >RESUME</a
+                    >
+                    <a style="margin-left: 5px; margin-right: 5px" href="#five"
+                      >CERTIFICATES</a
+                    >
+                    <!-- <a style="margin-left: 5px; margin-right: 5px" href=""
+                      >SKILLS</a
+                    > -->
+                    <a
+                      style="margin-left: 5px; margin-right: 20px"
+                      href="#eight"
+                      onclick="smoothScroll('#eight',1000)"
+                      >CONNECT</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="container">
+              <p>
+                <span id="line1">Hi, I'm <b id="vishnu">Vishnu</b></span>
+                <span class="typed-text"></span
+                ><span class="cursor">&nbsp;</span> Developer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="two" id="two">
+        <h1>About Me</h1>
+        <h1 id="darr">&#129175;</h1>
+      </section>
+
+      <section class="parallax">
+        <div class="bg-move1"></div>
+        <div class="aboutparadiv flashlight-container" id="aboutparadiv">
+          <div id="aboutparad">
+            <p id="aboutpara">Hello,</p>
+            <p id="aboutpara">I am MDS Vishnu Vardhan,</p>
+            <p id="aboutpara">
+              A self-motivated and driven Computer Science undergraduate with a
+              passion for technology and a dream to become a successful Software
+              Engineer. Throughout my academic journey at Andhra University
+              College of Engineering, I have maintained a commendable CGPA of
+              7.97, demonstrating my commitment to excellence.
+            </p>
+            <p id="aboutpara">
+              I possess a diverse skill set, including proficiency in MERN Stack
+              development, SQL, CSS, JavaScript, Bootstrap, PHP, C, Java, and
+              HTML. As an enthusiastic learner, I take pride in staying
+              up-to-date with the latest trends in computer science, which
+              enables me to actively engage in conversations and contribute
+              innovative ideas. I embrace challenges with patience and a strong
+              problem-solving mindset, allowing me to thrive in diverse
+              environments and foster teamwork. As I continue my journey, I am
+              eager to contribute my skills and creativity to the vast ocean of
+              the Tech Industry and make a meaningful impact in the world of
+              software engineering.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="three" id="three">
+        <p id="project1" class="grid-item2">PROJECTS</p>
+        <div class="containercar grid-item2">
+          <input type="radio" name="slider" id="item-1" checked />
+          <input type="radio" name="slider" id="item-2" />
+          <input type="radio" name="slider" id="item-3" />
+          <input type="radio" name="slider" id="item-4" />
+          <input type="radio" name="slider" id="item-5" />
+          <input type="radio" name="slider" id="item-6" />
+          <input type="radio" name="slider" id="item-7" />
+          <input type="radio" name="slider" id="item-8" />
+          <input type="radio" name="slider" id="item-9" />
+          <input type="radio" name="slider" id="item-10" />
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img class="imagee" src="./ausua.png" alt="song" />
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img class="imagee" src="./privy.png" alt="song" />
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img class="imagee" src="./camera.jpg" alt="song" />
+            </label>
+            <label class="card" for="item-4" id="song-4">
+              <img class="imagee" src="./earbot.png" alt="song" />
+            </label>
+            <label class="card" for="item-5" id="song-5">
+              <img class="imagee" src="./tutor.png" alt="song" />
+            </label>
+            <label class="card" for="item-6" id="song-6">
+              <img class="imagee" src="./efood.png" alt="song" />
+            </label>
+            <label class="card" for="item-7" id="song-7">
+              <img class="imagee" src="./opexx.png" alt="song" />
+            </label>
+            <label class="card" for="item-8" id="song-8">
+              <img class="imagee" src="./bank.png" alt="song" />
+            </label>
+            <label class="card" for="item-9" id="song-9">
+              <img class="imagee" src="./lib.png" alt="song" />
+            </label>
+            <label class="card" for="item-10" id="song-10">
+              <img class="imagee" src="./elearn.png" alt="song" />
+            </label>
+          </div>
+          <div class="player">
+            <div class="upper-part">
+              <div class="info-area" id="test">
+                <label class="song-info" id="song-info-1">
+                  <div class="title">
+                    <b id="vishnu2">AUSUA</b> : An exclusive website for
+                    employees of Andhra University, featuring employee profiles
+                    and allowing individuals to find information about
+                    colleagues, while higher authorities can access additional
+                    data. <br />
+                    Tech used: HTML, CSS, JS, firebase, PHP & MySQL
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-2">
+                  <div class="title">
+                    <b id="vishnu2">Privy</b> : This MERN chat application with
+                    video conferencing feature is a comprehensive communication
+                    tool designed for realtime messaging and meetings. <br />
+                    Tech used: MongoDB, Express, React, Node.js, Socket.io, NPM,
+                    Chakra-UI
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-3">
+                  <div class="title">
+                    <b id="vishnu2">Camera</b> : The camera app is a simple web
+                    application allowing users to access their device's camera,
+                    capture pictures, and display them on the screen. It uses
+                    HTML, CSS, and JavaScript to access the camera stream,
+                    capture images through a canvas element, and show the images
+                    as a mirrored live view with a "Take a picture" button.
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-4">
+                  <div class="title">
+                    <b id="vishnu2">EarBot</b> : EarBot is a webstore dedicated
+                    to earphones and headphones. With a modern and visually
+                    appealing design using Bootstrap, it showcases various
+                    products through circular images. Users can explore
+                    different categories and make purchases. The app utilizes
+                    JavaScript for interactivity.
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-5">
+                  <div class="title">
+                    <b id="vishnu2">Tutor Point</b> : TutorPoint is a web
+                    application offering free online courses in various fields
+                    such as computer science, web development, and programming.
+                    Users can sign up, browse the course library, and search for
+                    specific courses. The platform aims to provide easy and
+                    lucid explanations for learners to enhance their knowledge
+                    and skills.
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-6">
+                  <div class="title">
+                    <b id="vishnu2">E-Food</b> : The "e-Food" app is a web-based
+                    platform for ordering food from local restaurants. It
+                    features a user-friendly interface with a navigation bar,
+                    carousel, and sections detailing easy steps to order food.
+                    Users can select their location from a dropdown menu and
+                    access customer reviews.
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-7">
+                  <div class="title">
+                    <b id="vishnu2">OPEXX</b> : Opexx is a web application
+                    focused on finding public sector tenders and bidding
+                    contests. It offers customized searches, automatic tender
+                    notifications, and easy team sharing. With a user-friendly
+                    design and millions of tenders, Opexx aims to streamline the
+                    process of finding and bidding for relevant opportunities.
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-8">
+                  <div class="title">
+                    <b id="vishnu2">Online Banking System</b> : It is an online
+                    banking platform. All the transactions between customer and
+                    bank are stored in a database that is the center of all
+                    information. <br />Tech used: HTML, CSS, JS, Bootstrap, PHP
+                    & MySQL
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-9">
+                  <div class="title">
+                    <b id="vishnu2">Library Management System</b> : Library
+                    management system is a website which fetches the content
+                    dynamically and supports all basic functionalities required
+                    by the user. View site <br />Tech used: HTML, CSS, JS,
+                    Bootstrap, PHP & MySQL
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-10">
+                  <div class="title">
+                    <b id="vishnu2">E-Learn</b> : E-Learn is an online learning
+                    platform offering tech-related courses. Its user-friendly
+                    interface presents diverse courses in categories like
+                    Python, Web Development, and Machine Learning. With expert
+                    instructors and lifetime access. The platform is powered by
+                    Bootstrap and jQuery, ensuring a seamless learning
+                    experience.
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="parallax" id="four">
+        <div class="bg-move"></div>
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1QAPU-3Ijp_WphaSDiSLdLc0jwSxnf9Qq/view?usp=sharing"
+          class="btn-neon"
+        >
+          RES
+          <p id="rrr">U</p>
+          ME
+          <svg height="50" width="180">
+            <polyline points="0,0 180,0 180,50 0,50 0,0"></polyline>
+          </svg>
+        </a>
+        <a href="javascript:void(0)" class="btn-neon2">
+          C
+          <p id="rrr">V</p>
+          <svg height="50" width="180">
+            <polyline points="0,0 180,0 180,50 0,50 0,0"></polyline>
+          </svg>
+        </a>
+        <div id="resdiv">
+          <p id="resume">RESUME</p>
+        </div>
+      </section>
+      <section class="four" id="five">
+        <h1>CERTIFICATES</h1>
+        <h1 id="darr">&#129175;</h1>
+      </section>
+      <section class="five">
+        <div class="tiler">
+          <img src="./c1.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c2.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c3.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c4.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c5.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c6.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c7.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c8.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c9.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c10.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c11.jpg" />
+        </div>
+        <div class="tiler">
+          <img src="./c12.jpg" />
+        </div>
+      </section>
+      <!-- <section class="six">
+        <h1>6</h1>
+      </section>
+      <section class="seven">
+        <h1>7</h1>
+      </section> -->
+      <section class="eight" id="eight">
+        <div class="contdivinfo">
+          <div class="divinfo">
+            <h2>Contact Info</h2>
+            <div class="clinks">
+              <div class="clink">
+                <a
+                  href="javascript:void(0)"
+                  class="clinka"
+                  style="cursor: default"
+                  ><img
+                    src="./email.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp; vithvishnu@gmail.com</a
+                >
+              </div>
+              <div class="clink">
+                <a
+                  href="javascript:void(0)"
+                  class="clinka"
+                  style="cursor: default"
+                  ><img
+                    src="./email.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp; mdsvishnuvardhan@gmail.com</a
+                >
+              </div>
+              <div class="clink">
+                <a
+                  href="javascript:void(0)"
+                  class="clinka"
+                  style="cursor: default"
+                  ><img
+                    src="./whatsapp.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp;+91 8500800703</a
+                >
+              </div>
+              <div class="clink">
+                <a
+                  href="javascript:void(0)"
+                  class="clinka"
+                  style="cursor: default"
+                  ><img
+                    src="./address.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp;Visakhapatnam - AP, India
+                </a>
+              </div>
+              <div class="clink">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/__v4vishnu__/"
+                  class="clinka"
+                  ><img
+                    src="./insta.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp;__v4vishnu__</a
+                >
+              </div>
+              <div class="clink">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mds-vishnu-vardhan-6092811a7/"
+                  class="clinka"
+                  ><img
+                    src="./linkedin.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp;MDS Vishnu Vardhan</a
+                >
+              </div>
+              <div class="clink">
+                <a
+                  target="_blank"
+                  href="https://twitter.com/_v4vishnu_"
+                  class="clinka"
+                  ><img
+                    src="./tweet.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp;@_v4vishnu_</a
+                >
+              </div>
+              <div class="clink">
+                <a
+                  target="_blank"
+                  href="https://github.com/VishnuM85"
+                  class="clinka"
+                  ><img
+                    src="./github.png"
+                    width="20px"
+                    class="clinkimg"
+                    alt=""
+                  />&emsp;MDS Vishnu Vardhan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        These blocks are the same as the first blocks to get that looping illusion going.
+        You need to add clones to fill out a full viewport height.
+        -->
+
+      <section class="one is-clone" id="zero">
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="grid-itemone">
+              <div class="wheel-container">
+                <div class="wheel"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item" id="rightone">
+            <div class="navbardiv">
+              <nav>
+                <ul>
+                  <li>
+                    <a style="margin-right: 5px" href="#two">ABOUT</a>
+                    <a style="margin-left: 5px; margin-right: 5px" href="#three"
+                      >PROJECTS</a
+                    >
+                    <a style="margin-left: 5px; margin-right: 5px" href="#four"
+                      >RESUME</a
+                    >
+                    <a style="margin-left: 5px; margin-right: 5px" href="#five"
+                      >CERTIFICATES</a
+                    >
+                    <!-- <a style="margin-left: 5px; margin-right: 5px" href=""
+                      >SKILLS</a
+                    > -->
+                    <a
+                      style="margin-left: 5px; margin-right: 20px"
+                      href="#eight"
+                      >CONNECT</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="container">
+              <p>
+                <span id="line1">Hi, I'm <b id="vishnu">Vishnu</b></span>
+                <span class="typed-text2"></span
+                ><span class="cursor2">&nbsp;</span> Developer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="two is-clone">
+        <h1>About Me</h1>
+        <h1 id="darr">&#129175;</h1>
+      </section>
+    </main>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/splitting@1.0.5/dist/splitting.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      console.clear();
+      Splitting({
+        target: ".tiler",
+        by: "cells",
+        rows: 3,
+        columns: 3,
+        image: true,
+      });
+
+      $(document).ready(function () {
+        $(".carousel").carousel({
+          padding: 800,
+          dist: -200,
+        });
+      });
+
+      function update(e) {
+        var containerRect = document
+          .querySelector(".flashlight-container")
+          .getBoundingClientRect();
+        var x = e.clientX || e.touches[0].clientX;
+        var y = e.clientY || e.touches[0].clientY;
+
+        // Adjust the coordinates to be relative to the center of the flashlight-container
+        x -= containerRect.width / 2;
+        y -= (containerRect.top + containerRect.height) / 2;
+
+        document.documentElement.style.setProperty("--cursorX", x + "px");
+        document.documentElement.style.setProperty("--cursorY", y + "px");
+      }
+
+      document.addEventListener("mousemove", update);
+      // document.addEventListener("touchmove", update);
+
+      var doc = window.document,
+        context = doc.querySelector(".js-loop"),
+        clones = context.querySelectorAll(".is-clone"),
+        disableScroll = false,
+        scrollHeight = 0,
+        scrollPos = 0,
+        clonesHeight = 0,
+        i = 0;
+
+      function getScrollPos() {
+        return (
+          (context.pageYOffset || context.scrollTop) - (context.clientTop || 0)
+        );
+      }
+
+      function setScrollPos(pos) {
+        context.scrollTop = pos;
+      }
+
+      function getClonesHeight() {
+        clonesHeight = 0;
+
+        for (i = 0; i < clones.length; i += 1) {
+          clonesHeight = clonesHeight + clones[i].offsetHeight;
+        }
+
+        return clonesHeight;
+      }
+
+      function reCalc() {
+        scrollPos = getScrollPos();
+        scrollHeight = context.scrollHeight;
+        clonesHeight = getClonesHeight();
+
+        if (scrollPos <= 0) {
+          setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling
+        }
+      }
+
+      function scrollUpdate() {
+        if (!disableScroll) {
+          scrollPos = getScrollPos();
+
+          if (clonesHeight + scrollPos >= scrollHeight) {
+            // Scroll to the top when you’ve reached the bottom
+            setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
+            disableScroll = true;
+          } else if (scrollPos <= 0) {
+            // Scroll to the bottom when you reach the top
+            setScrollPos(scrollHeight - clonesHeight);
+            disableScroll = true;
+          }
+        }
+
+        if (disableScroll) {
+          // Disable scroll-jumping for a short time to avoid flickering
+          window.setTimeout(function () {
+            disableScroll = false;
+          }, 40);
+        }
+      }
+
+      function init() {
+        reCalc();
+
+        context.addEventListener(
+          "scroll",
+          function () {
+            window.requestAnimationFrame(scrollUpdate);
+          },
+          false
+        );
+
+        window.addEventListener(
+          "resize",
+          function () {
+            window.requestAnimationFrame(reCalc);
+          },
+          false
+        );
+      }
+
+      if (document.readyState !== "loading") {
+        init();
+      } else {
+        doc.addEventListener("DOMContentLoaded", init, false);
+      }
+
+      // Just for this demo: Center the middle block on page load
+      window.onload = function () {
+        setScrollPos(
+          Math.round(
+            clones[0].getBoundingClientRect().top +
+              getScrollPos() -
+              (context.offsetHeight - clones[0].offsetHeight) / 2
+          )
+        );
+      };
+
+      const typedTextSpan = document.querySelector(".typed-text");
+      const cursorSpan = document.querySelector(".cursor");
+
+      const textArray = ["Software", "Full-Stack", "SQL"];
+      const typingDelay = 150;
+      const erasingDelay = 50;
+      const newTextDelay = 2000; // Delay between current and next text
+      let textArrayIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
+          typedTextSpan.textContent +=
+            textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } else {
+          cursorSpan.classList.remove("typing");
+          setTimeout(erase, newTextDelay);
+        }
+      }
+
+      function erase() {
+        if (charIndex > 0) {
+          if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } else {
+          cursorSpan.classList.remove("typing");
+          textArrayIndex++;
+          if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+          setTimeout(type, typingDelay + 1100);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // On DOM Load initiate the effect
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+      });
+
+      const typedTextSpan2 = document.querySelector(".typed-text2");
+      const cursorSpan2 = document.querySelector(".cursor2");
+
+      const textArray2 = ["Software", "Full-Stack", "SQL"];
+      const typingDelay2 = 150;
+      const erasingDelay2 = 50;
+      const newTextDelay2 = 2000; // Delay between current and next text
+      let textArrayIndex2 = 0;
+      let charIndex2 = 0;
+
+      function type2() {
+        if (charIndex2 < textArray2[textArrayIndex2].length) {
+          if (!cursorSpan2.classList.contains("typing"))
+            cursorSpan2.classList.add("typing");
+          typedTextSpan2.textContent +=
+            textArray2[textArrayIndex2].charAt(charIndex2);
+          charIndex2++;
+          setTimeout(type2, typingDelay2);
+        } else {
+          cursorSpan2.classList.remove("typing");
+          setTimeout(erase2, newTextDelay2);
+        }
+      }
+
+      function erase2() {
+        if (charIndex2 > 0) {
+          if (!cursorSpan2.classList.contains("typing"))
+            cursorSpan2.classList.add("typing");
+          typedTextSpan2.textContent = textArray2[textArrayIndex2].substring(
+            0,
+            charIndex2 - 1
+          );
+          charIndex2--;
+          setTimeout(erase2, erasingDelay2);
+        } else {
+          cursorSpan2.classList.remove("typing");
+          textArrayIndex2++;
+          if (textArrayIndex2 >= textArray2.length) textArrayIndex2 = 0;
+          setTimeout(type2, typingDelay2 + 1100);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // On DOM Load initiate the effect
+        if (textArray2.length) setTimeout(type2, newTextDelay2 + 250);
+      });
+    </script>
+  </body>
+</html>
