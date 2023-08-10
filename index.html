@@ -24,7 +24,7 @@
     <!-- <link rel="stylesheet" href="styles.css" /> -->
 
     <style>
-      @media (min-width: 1076px) {
+      @media (min-width: 1070px) {
         html,
         body {
           height: 100%;
@@ -38,6 +38,9 @@
           cursor: default;
           scroll-behavior: auto;
         }
+        .desktop-note{
+        display: none;
+      }
 
         @import url("https://fonts.googleapis.com/css2?family=Bevan&family=Cherry+Bomb+One&family=Chewy&family=Foldit&family=Henny+Penny&family=Jua&family=Kreon&family=Londrina+Outline&family=Rowdies:wght@300;400&family=Suez+One&family=Wix+Madefor+Text&display=swap");
 
@@ -879,15 +882,22 @@
           margin-bottom: -3px;
         }
       }
-      @media (max-width: 1075px) {
-        /* Optionally, you can hide content here or display a message */
-        body {
-          display: none;
-        }
+      @media (max-width: 1069px) {
+       main{
+        display:none;
+      }
+      .desktop-note{
+        display: block;
+        font-family: poppins;
+        text-align: center;
+      }
       }
     </style>
   </head>
   <body>
+    <div class="desktop-note">
+      This website is best experienced on desktop screens with widths greater than 1070px.
+  </div>
     <main class="Loop js-loop">
       <section class="one">
         <div class="grid-container">
@@ -1129,7 +1139,7 @@
         <div class="bg-move"></div>
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1xpodzkIOQU8eqL2Urv6i7aK2ZOKLqw9P/view?usp=sharing"
+          href="https://drive.google.com/file/d/1y9n-qmQgmJUXH55GZruoqmFEHt1G3sbS/view?usp=sharing"
           class="btn-neon"
         >
           RES
